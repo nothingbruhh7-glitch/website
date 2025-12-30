@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fragrance - Shahida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-container container">
+            <div class="nav-logo"><h2>Shahida</h2></div>
+            <nav>
+                <a class="nav-link" href="index.html">Home</a>
+                <button class="cart-btn" id="cart-btn" aria-label="View Cart" style="margin-left:10px;">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" style="padding: 140px 20px 40px;">
+        <div class="product-detail">
+            <div class="carousel" style="height: 400px; border-radius: 12px; overflow: hidden;">
+                <div class="carousel-track">
+                    <div class="carousel-slide">
+                        <img src="Perfume/Amplifier.jpg" alt="Perfume bottle">
+                    </div>
+                   
+                     <div class="carousel-slide">
+                        <img src="Perfume/Eau de Parfum2.jpg" alt="Fragrance display">
+                    </div>
+                     <div class="carousel-slide">
+                        <img src="Perfume/Miss Giordani Eau de Parfum2.jpg" alt="Fragrance display">
+                    </div>
+                     <div class="carousel-slide">
+                        <img src="Perfume/Mythical Seduction Fragrance Mist2.jpg" alt="Fragrance display">
+                    </div>
+                     <div class="carousel-slide">
+                        <img src="Perfume/Perfumed Roll-On Deodorant2.jpg" alt="Fragrance display">
+                    </div>
+                </div>
+
+                <button class="carousel-btn prev" aria-label="Previous">‹</button>
+                <button class="carousel-btn next" aria-label="Next">›</button>
+
+                <div class="carousel-dots">
+                    <button class="dot active" aria-label="Slide 1"></button>
+                    <button class="dot" aria-label="Slide 2"></button>
+                    <button class="dot" aria-label="Slide 3"></button>
+                </div>
+            </div>
+            <div style="margin-top:20px;">
+                <h1>Fragrance Collection</h1>
+                <p>Signature scents and perfumes to complement your style — long-lasting, elegant, and crafted for every mood.</p>
+                <P> In this collection there are 5 different fragrances available. And those are Amplifier, Eau de Parfum, Miss Giordani Eau de Parfum, Mythical Seduction Fragrance Mist, and Perfumed Roll-On Deodorant.</P>
+                <p class="product-price">From ₹999 To ₹5699</p>
+                <a class="btn btn-primary" href="#">Buy Now</a>
+                <a class="btn" href="index.html" style="margin-left:10px;">Back</a>
+            </div>
+
+            <div class="fragrance-thumbnails">
+                <h3 class="fragrance-thumbs-title">Explore our five perfumes</h3>
+                <ul class="fragrance-thumbnails-list">
+                    <li class="thumbnail-item" data-product-id="amplifier">
+                        <img src="Perfume/Amplifier.jpg" alt="Amplifier">
+                        <div class="thumb-meta"><strong>Amplifier</strong></div>
+                        <button class="btn thumb-add-btn sr-only" data-id="amplifier" data-name="Amplifier" data-price="1499">Add to cart</button>
+                    </li>
+                    <li class="thumbnail-item" data-product-id="eau-de-parfum">
+                        <img src="Perfume/Eau de Parfum2.jpg" alt="Eau de Parfum">
+                        <div class="thumb-meta"><strong>Eau de Parfum</strong></div>
+                        <button class="btn thumb-add-btn sr-only" data-id="eau-de-parfum" data-name="Eau de Parfum" data-price="2499">Add to cart</button>
+                    </li>
+                    <li class="thumbnail-item" data-product-id="miss-giordani">
+                        <img src="Perfume/Miss Giordani Eau de Parfum2.jpg" alt="Miss Giordani Eau de Parfum">
+                        <div class="thumb-meta"><strong>Miss Giordani</strong></div>
+                        <button class="btn thumb-add-btn" data-id="miss-giordani" data-name="Miss Giordani" data-price="3499">Add to cart</button>
+                    </li>
+                    <li class="thumbnail-item" data-product-id="mythical-seduction">
+                        <img src="Perfume/Mythical Seduction Fragrance Mist2.jpg" alt="Mythical Seduction Fragrance Mist">
+                        <div class="thumb-meta"><strong>Mythical Seduction</strong></div>
+                        <button class="btn thumb-add-btn" data-id="mythical-seduction" data-name="Mythical Seduction" data-price="1299">Add to cart</button>
+                    </li>
+                    <li class="thumbnail-item" data-product-id="perfumed-roll-on">
+                        <img src="Perfume/Perfumed Roll-On Deodorant2.jpg" alt="Perfumed Roll-On Deodorant">
+                        <div class="thumb-meta"><strong>Perfumed Roll-On</strong></div>
+                        <button class="btn thumb-add-btn" data-id="perfumed-roll-on" data-name="Perfumed Roll-On" data-price="999">Add to cart</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Product Detail Modal -->
+    <div class="modal" id="product-modal">
+        <div class="modal-content product-modal-content">
+            <span class="close" id="close-product">&times;</span>
+            <div class="product-detail" id="product-detail"></div>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
